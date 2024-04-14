@@ -1,0 +1,41 @@
+﻿<Window  x:Name="loginViewPage"  x:Class="LoginAppV2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginAppV2"
+        mc:Ignorable="d"
+        Title="LoginView"  Height="425" Width="340">
+    <Grid Background="#FFE8C475">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="5"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="1" Grid.Column="1" Content="Hello! Login " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20"></Label>
+        <Label Grid.Row="2" Grid.Column="1" Content="or Resiter below" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20"></Label>
+        <Label Grid.Row="4" Grid.Column="1" Content="Username : " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20"></Label>
+        <Label Grid.Row="6" Grid.Column="1" Content="Password : " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20"></Label>
+        <TextBox x:Name="usernameBox" Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" FontSize="24" Background="#FFE3D337"/>
+        <PasswordBox  x:Name="passwordfromuserBox" Grid.Row="6" Grid.Column="3" Background="#FFE3D337" FontSize="24" HorizontalContentAlignment="Center" />
+        <Button Click="Login_Click" Grid.Row="8" Grid.Column="1" Content="Login" FontSize="22" Background="#FFE3B624"></Button>
+        <Button Click="Register_Click"  Grid.Row="8" Grid.Column="3" Content="Register" Background="#FFE3B624" FontSize="22"></Button>
+
+
+    </Grid>
+</Window>
